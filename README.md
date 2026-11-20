@@ -1,4 +1,4 @@
-# ✊✋✌️ Clasificación de Piedra, Papel o Tijera con una CNN desde cero
+# Clasificación de Piedra, Papel o Tijera con una CNN desde cero
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/USUARIO/NOMBRE-REPO/blob/main/PIA_RPS_CNN.ipynb)
 
@@ -6,15 +6,16 @@ Proyecto final de **Introducción al Aprendizaje Máquina** — Ingeniería en I
 
 Red Neuronal Convolucional (CNN) diseñada y entrenada **desde cero** con TensorFlow/Keras, sin modelos preentrenados, para reconocer gestos de mano de piedra, papel o tijera a partir de imágenes.
 
-## 👥 Integrantes
+## Integrantes
 
 | Nombre | Matrícula |
 |---|---|
-| Nombre Apellido | 0000000 |
-| Nombre Apellido | 0000000 |
-| Nombre Apellido | 0000000 |
+| Luis Ricardo Salinas de la Peña | 2142924 |
+| Alessandro Galvan Junquera | 2143543 |
+| Peyton Oved Sanchez Olguin | 2152791 |
+| Francisco Gabriel Delgado Ortiz | 2091878 |
 
-## 📂 Dataset
+## Dataset
 
 [Rock-Paper-Scissors Images](https://www.kaggle.com/datasets/drgfreeman/rockpaperscissors) (Kaggle, `drgfreeman/rockpaperscissors`)
 
@@ -23,7 +24,7 @@ Red Neuronal Convolucional (CNN) diseñada y entrenada **desde cero** con Tensor
 
 La notebook lee el dataset desde el `.zip` descargado de Kaggle (o lo descarga con [`kagglehub`](https://github.com/Kaggle/kagglehub) si no lo encuentra), así que no hace falta subir las imágenes al repositorio.
 
-## 🧠 Metodología
+## Metodología
 
 1. **Preprocesamiento:** división estratificada 70 % / 15 % / 15 % (train / validation / test), redimensionamiento a 150×150 px y normalización de píxeles a [0, 1] (división entre 255).
 2. **Arquitectura (desde cero):**
@@ -41,22 +42,22 @@ Input (150×150×3)
 3. **Entrenamiento:** Adam (lr = 0.001), `categorical_crossentropy`, métrica `accuracy`, batch size 32, 25 épocas.
 4. **Evaluación:** curvas de pérdida y precisión, métricas en el conjunto de prueba, matriz de confusión, reporte de clasificación (Precision, Recall, F1 por clase) y ejemplos visuales de aciertos y errores.
 
-## 📊 Resultados
+## Resultados
 
 | Métrica | Valor |
 |---|---|
-| Accuracy en prueba | _completar_ |
-| Loss en prueba | _completar_ |
-| Macro F1 en prueba | _completar_ |
+| Accuracy en prueba | 0.9818 |
+| Loss en prueba | 0.0526 |
+| Macro F1 en prueba | 0.9815 |
 
 <!-- Después de ejecutar la notebook, sube la carpeta figuras/ y descomenta estas líneas:
 ![Curvas de aprendizaje](figuras/curvas_aprendizaje.png)
 ![Matriz de confusión](figuras/matriz_confusion.png)
 -->
 
-## 🚀 Cómo ejecutarlo
+## Cómo ejecutarlo
 
-### Opción 1: Google Colab (recomendada)
+### Google Colab
 
 1. Descarga el dataset de [Kaggle](https://www.kaggle.com/datasets/drgfreeman/rockpaperscissors) como `.zip`.
 2. Haz clic en el botón **Open in Colab** de arriba.
@@ -66,29 +67,6 @@ Input (150×150×3)
 
 Si no subes el `.zip`, la notebook intenta descargar el dataset con `kagglehub`.
 
-### Opción 2: local
 
-```bash
-git clone https://github.com/USUARIO/NOMBRE-REPO.git
-cd NOMBRE-REPO
-pip install -r requirements.txt
-jupyter notebook PIA_RPS_CNN.ipynb
-```
 
-Coloca el `.zip` del dataset en la misma carpeta que la notebook (o ajusta `ZIP_PATH`).
 
-## 📁 Estructura del repositorio
-
-```
-├── PIA_RPS_CNN.ipynb     # Notebook con la solución completa (secciones 1–4)
-├── requirements.txt      # Dependencias para ejecución local
-├── README.md
-└── figuras/              # (se genera al ejecutar) gráficas y métricas para el reporte
-```
-
-## 📚 Referencias
-
-- de la Bruère-Terreault, J. (2018). *Rock-Paper-Scissors Images* [Dataset]. Kaggle.
-- Chollet, F. (2021). *Deep Learning with Python* (2nd ed.). Manning.
-- Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*. MIT Press.
-- LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998). Gradient-based learning applied to document recognition. *Proceedings of the IEEE, 86*(11), 2278–2324.
