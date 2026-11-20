@@ -60,7 +60,7 @@ Input (150×150×3)
 1. Descarga el dataset de [Kaggle](https://www.kaggle.com/datasets/drgfreeman/rockpaperscissors) como `.zip`.
 2. Haz clic en el botón **Open in Colab** de arriba.
 3. Activa la GPU: *Entorno de ejecución → Cambiar tipo de entorno de ejecución → GPU (T4)*.
-4. Abre el panel de archivos (📁) y arrastra el `.zip`. Si tiene otro nombre que `rockpaperscissors.zip`, cámbialo en la variable `ZIP_PATH`.
+4. Abre el panel de archivos y arrastra el `.zip`. Si tiene otro nombre que `rockpaperscissors.zip`, cámbialo en la variable `ZIP_PATH`.
 5. Ejecuta todo: *Entorno de ejecución → Ejecutar todas*.
 
 Si no subes el `.zip`, la notebook intenta descargar el dataset con `kagglehub`.
