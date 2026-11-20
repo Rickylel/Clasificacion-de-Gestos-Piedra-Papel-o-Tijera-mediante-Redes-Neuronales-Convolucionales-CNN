@@ -1,7 +1,5 @@
 # Clasificación de Piedra, Papel o Tijera con una CNN desde cero
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/USUARIO/NOMBRE-REPO/blob/main/PIA_RPS_CNN.ipynb)
-
 Proyecto final de **Introducción al Aprendizaje Máquina** — Ingeniería en Inteligencia Artificial, FIME, UANL.
 
 Red Neuronal Convolucional (CNN) diseñada y entrenada **desde cero** con TensorFlow/Keras, sin modelos preentrenados, para reconocer gestos de mano de piedra, papel o tijera a partir de imágenes.
